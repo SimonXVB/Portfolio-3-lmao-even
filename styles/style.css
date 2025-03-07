@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    background-color: rgb(24, 24, 24);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-variant: small-caps;
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.divider {
+    height: 8px;
+    background-color: white;
+    width: 50%;
+    margin: 6rem auto;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10rem;
+    background-color: rgb(34, 34, 34);
+    padding-inline: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    max-width: 1300px;
+    width: 100%;
+    gap: 3rem;
+
+    a {
+        color: white;
+    }
+
+    a:hover {
+        color: rgba(255, 255, 255, 0.500);
+    }
+}
+
+.github-fixed {
+    position: fixed;
+    top: 50%;
+    left: -3%;
+    transform: rotate(90deg);
+
+    a {
+        color: white;
+    }
+
+    a:hover {
+        color: rgba(255, 255, 255, 0.500);
+    }
+}
+
+.sticker {
+    position: absolute;
+    z-index: -900;
+    width: 70px;
+    aspect-ratio: 1/1;
+    background-color: white;
+    padding: 35px;
+    border-radius: 50px;
+    box-sizing: content-box;
+    opacity: 60%;
+}
+
+.sticker-1 {
+    top: 4%;
+    left: 10%;
+    transform: rotate(-45deg);
+}
+
+.sticker-2 {
+    top: 15%;
+    left: 75%;
+    transform: rotate(20deg);
+}
+
+.sticker-3 {
+    top: 18%;
+    left: 50%;
+    transform: rotate(18deg);
+}
+
+.sticker-4 {
+    top: 3%;
+    left: 70%;
+    transform: rotate(-25deg);
+}
+
+.sticker-5 {
+    top: 17%;
+    left: 15%;
+    transform: rotate(-5deg);
+}
+
+.sticker-6 {
+    top: 1%;
+    left: 45%;
+    transform: rotate(-15deg);
+}
+
+@media (max-width: 650px) {
+    .sticker {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 1500px) {
+    .github-fixed {
+        display: none;
+    }
+}

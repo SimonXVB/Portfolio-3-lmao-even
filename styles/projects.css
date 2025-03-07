@@ -1,0 +1,218 @@
+.projects-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 2rem;
+
+    h1 {
+        font-size: 4.5rem;
+        margin: 0;
+        font-weight: 100;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    box-sizing: border-box;
+    border: 4px solid white;
+    border-radius: 10px;
+    max-width: 900px;
+    width: 100%;
+    min-height: 200px;
+    padding: 1rem;
+    text-align: right;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 10px;
+
+    img {
+        width: 150px;
+        aspect-ratio: 1/1;
+        padding: 30px;
+        background-color: rgb(37, 37, 37);
+        border-radius: 20px;
+    }
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 70%;
+    margin-right: 2rem;
+
+    a {
+        color: white;
+    }
+
+    a:hover {
+        color: rgba(255, 255, 255, 0.500);
+    }
+
+    h2 {
+        margin: 0;
+        margin-top: 1rem;
+        font-weight: 400;
+        font-size: 2.5rem;
+    }
+
+    > p {
+        margin-top: 0.5rem;
+        font-weight: 100;
+        font-size: 1.3rem;
+    }
+}
+
+.tag-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 80%;
+
+    p {
+        margin: 0;
+    }
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    padding-right: 10px;
+    padding-left: 5px;
+    padding-block: 5px;
+    border-radius: 6px;
+
+    img {
+        width: 1.5rem;
+        aspect-ratio: 1/1;
+    }
+}
+
+.tag-react {
+    background-color: rgba(59, 130, 246);
+}
+
+.tag-tailwind {
+    background-color: rgb(0, 60, 255);
+}
+
+.tag-electron {
+    background-color: rgb(0, 20, 110);
+}
+
+.tag-express {
+    background-color: rgb(82, 82, 82);
+}
+
+.tag-postgres {
+    background-color: rgb(0, 134, 134);
+}
+
+.tag-prisma {
+    background-color: indigo;
+}
+
+.tag-html {
+    background-color: rgb(227, 76, 38);
+}
+
+.tag-css {
+    background-color: blue;
+}
+
+.tag-js {
+    background-color: rgba(240, 218, 79, 0.750);
+}
+
+.tag-other {
+    background-color: rgb(255, 62, 62);
+}
+
+.card {
+    display: flex;
+    border: 4px solid white;
+    border-radius: 10px;
+    max-width: 900px;
+    width: 100%;
+    min-height: 200px;
+    padding-block: 1rem;
+}
+
+@media (max-width: 1145px) {
+    .projects-container {
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .card {
+        flex-direction: column;
+        justify-content: end;
+        text-align: left;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 35%;
+
+        img {
+            width: 110px;
+            padding: 20px;
+        }
+    }
+
+    .card-content {
+        width: 100%;
+        height: 65%;
+        align-items: start;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .tag-container {
+        justify-content: start;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .projects-container {
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+
+    .card-content {
+        h2 {
+            font-size: 1.7rem;
+        }
+    }
+}
