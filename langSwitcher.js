@@ -27,7 +27,7 @@ const projectsH1 = document.querySelector(".projects-h1");
 const projectsSwan = document.querySelector(".projects-swan");
 const projectsPosta = document.querySelector(".projects-posta");
 const projectsOdin = document.querySelector(".projects-odin");
-const githubA = document.querySelector(".github-a");
+const githubA = document.querySelector(".github-fixed");
 const projectsA = document.querySelectorAll(".projects-a");
 const langButton = document.querySelectorAll(".lang-button");
 

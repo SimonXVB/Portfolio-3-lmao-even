@@ -4,10 +4,35 @@
 
 .stack {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
-    margin-inline: 2rem;
+    padding-inline: 2rem;
+    padding-block: 5rem;
+    margin-block: 6rem;
     min-height: 700px;
+    background: linear-gradient(to right, rgb(255, 110, 110), rgb(25, 22, 189));
+    background-size: 150%;
+}
+
+.stack::before,
+.stack::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(24, 24, 24);
+    mask-image: url(/assets/triangle.svg);
+    mask-size: 120px 20px;
+}
+
+.stack::before {
+    top: 0;
+}
+
+.stack::after {
+    bottom: 0;
+    transform: rotate(180deg);
 }
 
 .stack-container {
@@ -83,7 +108,7 @@
 
 .express-logo {
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 5px;
 }
 

@@ -3,7 +3,6 @@ body {
     background-color: rgb(24, 24, 24);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    font-variant: small-caps;
     position: relative;
 }
 
@@ -49,14 +48,12 @@ html {
     top: 50%;
     left: -3%;
     transform: rotate(90deg);
+    z-index: 10;
+    color: white;
+}
 
-    a {
-        color: white;
-    }
-
-    a:hover {
-        color: rgba(255, 255, 255, 0.500);
-    }
+.github-fixed:hover {
+    color: rgba(255, 255, 255, 0.500);
 }
 
 .sticker {
@@ -64,11 +61,19 @@ html {
     z-index: -900;
     width: 70px;
     aspect-ratio: 1/1;
+    opacity: 60%;
     background-color: white;
     padding: 35px;
     border-radius: 50px;
     box-sizing: content-box;
-    opacity: 60%;
+    mask: linear-gradient(-60deg, #000 35%, rgba(0, 0, 0, 0.5), #000 65%) right/350%;
+    animation: shimmer 4s infinite ease-in-out;
+}
+
+@keyframes shimmer {
+    to {
+        mask-position: left;
+    }
 }
 
 .sticker-1 {

@@ -6,6 +6,7 @@
     width: 100%;
     background-color: rgba(30, 30, 30, 0.4);
     backdrop-filter: blur(10px);
+    z-index: 10;
 }
 
 .navbar > ul {
